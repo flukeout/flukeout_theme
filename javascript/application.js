@@ -21,6 +21,9 @@ $(document).ready(function() {
      $(window).scroll(function(){
        var scroll = $(this).scrollTop();
        $.cookie("scroll", scroll, {expires : 7 , path : '/'});
+       rotateHeader(scroll);
+     
+     
      });
   
      var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/); 
@@ -29,11 +32,19 @@ $(document).ready(function() {
        if($.cookie("scroll")) {
         $(window).scrollTop($.cookie("scroll")); 
        };
+       rotateHeader($.cookie("scroll"));
      }
   
   
   
 })
+
+function rotateHeader(scroll){
+  var percent = scroll/260;
+  var opacity = 1 - percent;
+  $("#header h1").css("opacity",opacity);
+}
+
 
 var thumbViewerObject = function(id) {
   
