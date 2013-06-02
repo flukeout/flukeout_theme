@@ -11,7 +11,7 @@
 		  </h2>
 
     	<div class="PostDate">
-        <?php the_time('F jS, Y') ?> by <?php the_author() ?>
+        <?php the_time('F jS, Y') ?> <!--by <?php the_author() ?>-->
       </div>
 
       <div class="PostComments">

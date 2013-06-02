@@ -1,15 +1,17 @@
 <div class="PostThumbnailsWrapper">
 
   <?php
-    global $wp_query;
-    $currentPostID = $wp_query->post->ID;
+    if (is_home()) {
+      $id = 0;
+    } else {
+      $id = $post->ID;
+    }
   ?>
 
   <script language="javascript" type="text/javascript">
-    var currentPostID = <?php echo $currentPostID ?>;
+      var currentPostID = <?php echo $id ?>;
   </script>
-
-
+  
   <!-- This sets (or retrieves) the last browsed category.
   Can't set cookies with PHP for some reason (wordpress conflict?) -->
   <?php
@@ -25,12 +27,13 @@
     </script>
   <?php } ?>
       
+   
   <h2>Latest Posts
     <?php if($cur_cat_id) {?>
     <span class="Meta"> in <?php  echo get_cat_name( $cur_cat_id);  ?></span>
     <?php } ?>
   </h2>
-  
+
   
   <div class="PostThumbnails">
 

@@ -60,25 +60,23 @@ strong {
   padding-bottom: 10px;
   text-align: center;
   padding: 15px 0;
-  
 }
 
-#header h1 .f {
-  margin-right: 0px;
-}
 
 #header h1, #header h1 a {
-  color: #BBB;
+  color: white;
 	font-size: 120px;
+	opacity: .65;
 	position: relative;
-  color: #999;
-/*  text-shadow: 0px 1px 0px rgba(255,255,255,.3);*/
+  color: white;
 }
 
 
 #header h1 #blog_description {
-  color: #555;
-	font-size: 26px;
+  color: #666;
+	font-size: 27px;
+	position: relative;
+	left: 3px;
   display: block;
   margin: 0;
 }
@@ -743,7 +741,6 @@ footer p {
 
 .SlideMe {
   -webkit-transition: left linear .3s;
-
 }
 
 .PostThumbnails .PostLink {
@@ -751,6 +748,15 @@ footer p {
   display: block;
   margin: 0 5px 5px 0;
 }
+
+.PostThumbnails .PostLink.Same {
+  background: url("images/you_are_here.png");
+}
+
+.PostThumbnails .PostLink.Same img {
+  opacity: .25;
+}
+
 
 .PostThumbnails .Page {
   float: left;

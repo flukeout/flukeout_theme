@@ -40,7 +40,7 @@
              <span id="home_icon"></span>
              <span class="f">f</span>lukeout
            </a>
-           <span id="blog_description">luke pacholski's design &amp; illustration blog</span>
+           <span id="blog_description">luke pacholski's design &amp; illustration</span>
          </h1>
        </div>
 

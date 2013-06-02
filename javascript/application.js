@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 function rotateHeader(scroll){
   var percent = scroll/260;
-  var opacity = 1 - percent;
+  var opacity = 1 - percent;  
   $("#header h1").css("opacity",opacity);
 }
 
@@ -83,10 +83,11 @@ var thumbViewerObject = function(id) {
          //Goes to the page with the currently viewed post
          
         if ($(this).attr("post_id") == currentPostID) {
+          console.log(currentPostID);
+          
           $(this).addClass("Same");
           that.showingPage = fillingPage;
           that.gotoPage(fillingPage, "jump");
-
         }
         
         $(".PostLink").on("dragstart",function(e){
