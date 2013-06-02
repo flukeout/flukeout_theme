@@ -60,6 +60,7 @@ var thumbViewerObject = function(id) {
           $(this).addClass("Same");
           that.showingPage = fillingPage;
           that.gotoPage(fillingPage, "jump");
+
         }
         
         $(".PostLink").on("dragstart",function(e){
@@ -76,26 +77,27 @@ var thumbViewerObject = function(id) {
       });
 
        hammertime.on("release", function(ev) {
-      
-          var direction = ev.gesture.direction;
-      
+        
+          if (ev.gesture.distance > 10) {
+            var direction = ev.gesture.direction;
+
             if (direction == "right" && that.showingPage > 1) {
-      
               that.showingPage--;
               that.gotoPage(that.showingPage,"slide");
             }      
-      
+
             if(direction == "left" && that.showingPage < that.numberPages){
-    
               that.showingPage++;
               that.gotoPage(that.showingPage,"slide");
             }
+          }
+        
       
             return false;
 
            });
 
-      $(this.viewer).on("click"," .ThumbNav a", function() {
+      $(this.viewer).on("click",".ThumbNav a", function() {
 
          if ($(this).attr("id") == "next") {
            that.showingPage++;
@@ -109,13 +111,20 @@ var thumbViewerObject = function(id) {
 
        });
        
-       that.hideNav();
        that.numberPages = $(".Page").size();
-       
-       console.log(that); 
+       that.hideNav();
+
+
    
     },
     gotoPage : function (page,style) {
+      
+      $('.PostThumbnails').removeClass("SlideMe");
+      
+      if(style == "slide"){
+        $('.PostThumbnails').addClass("SlideMe");
+      }
+
       var gotoPosition = -1 * ((page-1) * this.pageWidth);
       $('.PostThumbnails').css("left", gotoPosition);
       this.hideNav();
@@ -123,17 +132,17 @@ var thumbViewerObject = function(id) {
     },
     //Shows appropriate next / previous buttons
     hideNav : function() {
-        
-        $("#previous").show();
-        $("#next").show();
-        
-        if (this.showingPage == 1) {
-          $("#previous").hide();
-        }
-        
-        if (this.showingPage == this.numberPages) {
-          $("#next").hide();
-        }
+      
+      $("#previous").show();
+      $("#next").show();
+      
+      if (this.showingPage == 1) {
+        $("#previous").hide();
+      }
+      
+      if (this.showingPage == this.numberPages) {
+        $("#next").hide();
+      }
     }
     
     }
