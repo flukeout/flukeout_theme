@@ -17,6 +17,7 @@
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/javascript/swipe.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/javascript/application.js"></script>
 
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/images/icon.png" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" media="screen and (max-width: 420px)" href="<?php bloginfo('template_directory'); ?>/small_devices.css" type="text/css" />
