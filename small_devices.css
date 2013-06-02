@@ -78,10 +78,8 @@ page {
 
 
 .PostThumbnails .Page {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
-
-
 
 /*POST*/
 .PostComments {

@@ -702,7 +702,8 @@ footer p {
 }
 
 .PostThumbnails {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  overflow: auto;
   -webkit-transition: left linear .3s;
 }
 
@@ -715,7 +716,7 @@ footer p {
 .PostThumbnails .Page {
   float: left;
   width: 400px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   
 }
 
