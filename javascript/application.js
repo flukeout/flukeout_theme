@@ -17,6 +17,21 @@ $(document).ready(function() {
         "width"  : 400,
         "height" : 840
      });
+
+     $(window).scroll(function(){
+       var scroll = $(this).scrollTop();
+       $.cookie("scroll", scroll, {expires : 7 , path : '/'});
+     });
+  
+     var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/); 
+     
+     if(!isMobile){
+       if($.cookie("scroll")) {
+        $(window).scrollTop($.cookie("scroll")); 
+       };
+     }
+  
+  
   
 })
 

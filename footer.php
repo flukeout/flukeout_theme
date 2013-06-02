@@ -7,6 +7,8 @@
   </p> 
   -->
 </footer>
+
+</div> <!-- /#content_wrapper -->
 </div>
 
 <!-- Plugins might add stuff to the footer, so I left this in. -->

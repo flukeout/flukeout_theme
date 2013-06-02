@@ -20,15 +20,33 @@ body {
 	text-align: left;
 	margin: 0 auto;
 	width: 1000px;
+	z-index: 1;
 }
 
 
 #page {
 	padding: 0 20px;
+	z-index: 1;
+	position: relative;
 }
 
-header {
-  padding: 15px 0 0 0;
+#header {
+  padding: 15px 0 35px 0;
+  background: black;
+  position: fixed;
+  width: 960px;
+  z-index: 2;
+  display: block;
+  background-image: url("images/header.png");
+}
+
+
+#content_wrapper {
+  border-top: solid 5px #DDD;
+  z-index: 999;
+  position: relative;
+  top: 220px;
+  background: white;
 }
 
 
@@ -36,23 +54,41 @@ strong {
   font-weight: bold;
 }
 
-header h1 {
+#header h1 {
   text-align: left;
-  border-bottom: solid 5px #DDD;
   padding-bottom: 10px;
+  text-align: center;
+  padding: 15px 0;
+  
 }
 
-header h1, header h1 a {
+#header h1 .f {
+  margin-right: 0px;
+}
+
+#header h1, #header h1 a {
   color: #BBB;
-	font-size: 54px;
+	font-size: 120px;
 	position: relative;
+  color: #999;
+/*  text-shadow: 0px 1px 0px rgba(255,255,255,.3);*/
 }
 
-header h1 a:hover {
-	color: #999;
+
+#header h1 #blog_description {
+  color: #555;
+	font-size: 26px;
+  display: block;
+  margin: 0;
 }
 
-header h1 a #home_icon {
+
+
+#header h1 a:hover {
+	color: #CCC;
+}
+
+#header h1 a #home_icon {
   position: absolute;
   height: 50px;
   width: 50px;
@@ -62,14 +98,11 @@ header h1 a #home_icon {
   display: none;
 }
 
-header h1 a:hover #home_icon {
-  display: block;
+#header h1 a:hover #home_icon {
+/*  display: block;*/
 }
 
-header h1 #blog_description {
-  color: #CCC;
-	font-size: 26px;
-}
+
 
 /* Post */
 
@@ -335,9 +368,9 @@ a:hover {
 /* Begin Structure */
 
 #content {
-  float: left;
 	width: 540px;
 	margin-top: 20px;
+	float: left;
 }
 
 /* End Structure */
@@ -704,10 +737,12 @@ footer p {
 .PostThumbnails {
   margin-bottom: 9px;
   overflow: auto;
+
 }
 
 .SlideMe {
   -webkit-transition: left linear .3s;
+
 }
 
 .PostThumbnails .PostLink {

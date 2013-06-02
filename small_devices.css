@@ -9,26 +9,35 @@ body {
 }
 
 #page {
-  padding: 10px;
-}
-
-header {
   padding: 0px;
 }
-
-
-header h1{
-  padding-bottom: 5px;
+#content_wrapper {
+  padding: 0 10px;
 }
 
-header h1 a {
-  font-size: 35px;
-  color: #444;
+
+#header {
+  padding:  0;
+  position: static;
+  width: auto;
+}
+
+
+#header h1{
+ 
+}
+
+#header h1 a {
+  font-size: 32px;
+  color: #BBB;
   display: block;
 }
   
+#content_wrapper {
+  top: 0px ;
+}
 
-header h1 #blog_description {
+#header h1 #blog_description {
   display: none;
   font-size: 18px;
 }

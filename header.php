@@ -29,18 +29,22 @@
   </head>
 
   <body>
+
+
     <div id="page_wrapper">
     <div id="page">
+
+      <div id="header">
+         <h1>
+           <a href="/">
+             <span id="home_icon"></span>
+             <span class="f">f</span>lukeout
+           </a>
+           <span id="blog_description">luke pacholski's design &amp; illustration blog</span>
+         </h1>
+       </div>
+
   
-     <header>
-        <h1>
-          <a href="/">
-            <span id="home_icon"></span>
-            flukeout
-          </a>
-          <span id="blog_description">luke pacholski's design &amp; illustration blog</span>
-        </h1>
-      </header>
-  
+    <div id="content_wrapper">
 
     <?php get_template_part( 'thumbnails' );           // Navigation bar (thumbnails.php) ?>
