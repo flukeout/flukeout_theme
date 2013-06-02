@@ -8,10 +8,13 @@
 		  <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
 		</h2>
 
-		<div class="PostDate"><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></div>
-    <div class="PostComments"><?php comments_popup_link('Leave a comment', '1 Comment', '% Comments'); ?></div>
-		<div class="PostBody"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
 
+    <div class="TitleMeta">
+  		<span class="PostDate"><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></span>
+      <span class="PostComments"><?php comments_popup_link('Leave a comment', '1 Comment', '% Comments'); ?></span>
+		</div>
+		
+    <div class="PostBody"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
 		<div class="PostMeta">
 		  <span class="Share">
 		    <?php if (function_exists('sociable_html')) {

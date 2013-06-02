@@ -46,5 +46,5 @@
 
   
     <div id="content_wrapper">
-
+      <div id="header_overlay"></div>
     <?php get_template_part( 'thumbnails' );           // Navigation bar (thumbnails.php) ?>

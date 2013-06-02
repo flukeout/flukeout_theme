@@ -13,6 +13,7 @@ body {
 }
 #content_wrapper {
   padding: 0 10px;
+  border-top: solid 5px #DDD;
 }
 
 
@@ -108,9 +109,15 @@ page {
   margin-top: 15px;
 }
 
-
 .PostBody h2 {
   font-size: 18px;
 }
 
+#header_overlay {
+  display: none;
+}
 
+
+.Comments {
+  display:none;
+}

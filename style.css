@@ -31,7 +31,7 @@ body {
 }
 
 #header {
-  padding: 15px 0 35px 0;
+  padding: 10px 0 35px 0;
   background: black;
   position: fixed;
   width: 960px;
@@ -43,13 +43,20 @@ body {
 
 
 #content_wrapper {
-  border-top: solid 5px #DDD;
   z-index: 999;
   position: relative;
-  top: 220px;
-  background: white;
+  top: 245px;
+  background:white;
+  padding-top: 17px;
 }
 
+#header_overlay {
+    background: top no-repeat url("images/header_overlay.png");
+    position: absolute;
+    top: -70px;
+    height: 70px;
+    width: 100%;
+}
 
 strong {
   font-weight: bold;
@@ -84,7 +91,7 @@ strong {
 
 
 #header h1 a:hover {
-	color: #CCC;
+  opacity: .8;
 }
 
 #header h1 a #home_icon {
@@ -165,10 +172,10 @@ strong {
 
 
 .PostTitle {
-	margin: 0 0 5px 0;
+	margin: 0 0 8px 0;
 	font-size: 35px;
 	text-align: left;
-	}
+}
 
 .PostTitle a {
 	color: #666;
@@ -185,13 +192,16 @@ strong {
 }
 
 .PostComments {
-	padding-left: 20px;
-	background: url('images/comment.png') no-repeat center left;
+	padding-left: 25px;
+	background: url('images/comment.png') 8px center no-repeat;
 	height: 16px;
-	font-weight: bold;
 	margin-bottom: 15px;
 }
 
+
+.TitleMeta {
+  margin-bottom: 15px;
+}
 
 
 
@@ -371,7 +381,6 @@ a:hover {
 
 #content {
 	width: 540px;
-	margin-top: 20px;
 	float: left;
 }
 
@@ -731,8 +740,8 @@ footer p {
 .PostThumbnailsWrapper {
   float: right;
   width: 400px;
-  margin-top: 25px;
   padding-bottom: 13px;
+  margin-top: 5px;
   border-bottom: solid 5px #DDD;
   overflow: hidden;
   position: relative;
