@@ -149,6 +149,7 @@ header h1 #blog_description {
 .PostDate {
 	color: #999;
 	margin-bottom: 4px;
+	font-size: 16px;
 }
 
 .PostComments {
@@ -182,7 +183,7 @@ header h1 #blog_description {
 
 .PostBody h2 {
 	font-size: 24px;
-	margin: 35px 0 15px 0;
+	margin: 35px 0 9px 0;
 
 }
 
@@ -202,7 +203,7 @@ header h1 #blog_description {
 .Post p {
   margin-bottom: 15px;
   line-height: 145%;
-  color: #999;
+  color: #777;
 }
 
 
@@ -608,8 +609,8 @@ a.ActionButton {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   background: #9e3433;
-  background: -webkit-linear-gradient(top , #cc3f3e, #9e3433);
-  background: -moz-linear-gradient(top , #cc3f3e, #9e3433);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cc3f3e), to(#9e3433));
+  background-image: -moz-linear-gradient(top , #cc3f3e, #9e3433);
   border: solid 2px #9e3433;
   cursor: pointer;
   text-shadow: 0px 1px 1px rgba(0,0,0,.4);

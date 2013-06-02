@@ -33,12 +33,12 @@
     <div id="page">
   
      <header>
-        <!-- <?php include (TEMPLATEPATH . '/searchform.php'); ?> -->
         <h1>
           <a href="/">
             <span id="home_icon"></span>
             flukeout
-          </a> <span id="blog_description">luke pacholski's design &amp; illustration blog</span>
+          </a>
+          <span id="blog_description">luke pacholski's design &amp; illustration blog</span>
         </h1>
       </header>
   

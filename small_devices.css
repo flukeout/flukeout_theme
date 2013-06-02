@@ -1,5 +1,6 @@
 body {
 /*  display: none;*/
+  font-size: 15px !important;
 }
 
 #page_wrapper {
@@ -8,7 +9,28 @@ body {
 }
 
 #page {
-  padding: 0 10px;
+  padding: 10px;
+}
+
+header {
+  padding: 0px;
+}
+
+
+header h1{
+  padding-bottom: 5px;
+}
+
+header h1 a {
+  font-size: 35px;
+  color: #444;
+  display: block;
+}
+  
+
+header h1 #blog_description {
+  display: none;
+  font-size: 18px;
 }
 
 img {
@@ -33,21 +55,6 @@ page {
   display: none;
 }
 
-header h1{
-  width: 100%;
-}
-
-header h1 a {
-  font-size: 22px;
-  color: #444;
-  display: block;
-}
-  
-
-header h1 #blog_description {
-
-  font-size: 18px;
-}
 
 #content {
   width: 100%;
@@ -70,10 +77,34 @@ header h1 #blog_description {
 }
 
 
-.PostTitle {
-  font-size: 22px;
+.PostThumbnails .Page {
+  margin-bottom: 5px;
 }
+
+
+
+/*POST*/
+.PostComments {
+  display: none;
+}
+
+.PostTitle {
+  font-size: 25px;
+}
+
+.PostDate {
+  font-size: 16px;
+}
+
+
+.PostBody {
+  margin-top: 15px;
+}
+
+
 
 .PostBody h2 {
   font-size: 18px;
 }
+
+
