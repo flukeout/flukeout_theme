@@ -247,15 +247,11 @@ h1 a:hover,h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visite
 /*Comments*/
 
 
-.alt {
-	}
-
 
 .commentlist li {
 	margin: 15px 0 3px;
-
 	list-style: none;
-	}
+}
 
 .CommentAuthor {
   color: #333;
@@ -311,6 +307,13 @@ h1 a:hover,h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visite
 
 .commentlist li p:last-child {
   margin-bottom: 0;
+}
+
+.Comments textarea {
+  width: 530px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: Georgia;
 }
 
 .Comments h2 {
@@ -511,22 +514,24 @@ select {
   margin-bottom: 20px;
 }
 
-input#submit {
-  font-size: 15px;
+#commentform #submit {
+  font-size: 18px;
   font-family: georgia;
-  padding: 0;
+  padding: 5px;
+  border: none;
+  background: #B85B5A;
+  color: white;
+  
 }
 #commentform input {
-	width: 170px;
-	padding: 2px;
+	width: 240px;
+	padding: 4px;
+	font-size: 15px;
+	font-family: Georgia;
 	margin: 5px 5px 1px 0;
 	}
 
 
-#commentform textarea {
-	width: 100%;
-	padding: 2px;
-	}
 
 /* End Form Elements */
 
