@@ -1,0 +1,79 @@
+body {
+/*  display: none;*/
+}
+
+#page_wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+#page {
+  padding: 0 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+
+#buddyBaller_iframe {
+height: 340px;
+}
+
+page {
+  width: 540px;
+}
+
+.Sidebar {
+  display: none;
+}
+
+header h1{
+  width: 100%;
+}
+
+header h1 a {
+  font-size: 22px;
+  color: #444;
+  display: block;
+}
+  
+
+header h1 #blog_description {
+
+  font-size: 18px;
+}
+
+#content {
+  width: 100%;
+  float: none;
+}
+
+.ThumbNav {
+  display: none;
+}
+
+.PostThumbnailsWrapper {
+  float: none;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+.PostThumbnailsWrapper h2 {
+  display: none;
+}
+
+
+.PostTitle {
+  font-size: 22px;
+}
+
+.PostBody h2 {
+  font-size: 18px;
+}

@@ -1,0 +1,860 @@
+/*  
+Theme Name: flukeout
+Description: flukeout -  modified from standard wordpess theme (Kubric Theme)
+Version: 1.0
+Author: Luke Pacholski
+*/
+
+@import url("reset.css");
+
+body {
+	font-size: 15px; /* Resets 1em to 15px */
+	font-family: 'Georgia', Arial, Sans-Serif;
+	color: #555;
+	text-align: center;
+	background: white;
+	margin: 0 0 20px 0;
+}
+
+#page_wrapper {
+	text-align: left;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+
+#page {
+	padding: 0 20px;
+}
+
+header {
+  padding: 15px 0 0 0;
+}
+
+
+strong {
+  font-weight: bold;
+}
+
+header h1 {
+  text-align: left;
+  border-bottom: solid 5px #DDD;
+  padding-bottom: 10px;
+}
+
+header h1, header h1 a {
+  color: #BBB;
+	font-size: 54px;
+	position: relative;
+}
+
+header h1 a:hover {
+	color: #999;
+}
+
+header h1 a #home_icon {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  left: -60px;
+  top: 10px;
+  background: url("images/home_icon.gif") top left no-repeat;
+  display: none;
+}
+
+header h1 a:hover #home_icon {
+  display: block;
+}
+
+header h1 #blog_description {
+  color: #CCC;
+	font-size: 26px;
+}
+
+/* Post */
+
+
+.Post {
+	margin: 0 0 30px;
+	text-align: left;
+	border-bottom: solid 6px #ddd;
+}
+
+.Post .PostThumbnail {
+  display: none;
+}
+
+
+/*Bottom of post navigation*/
+
+
+
+
+
+.Navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+  overflow: auto;
+  padding-bottom: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Navigation .Previous {
+  float: right;
+  padding: 10px 0;
+}
+
+.Navigation .Next {
+  float: left;
+  padding: 10px 0;
+}
+
+
+
+.Navigation .Next a,
+.Navigation .Previous a {
+  padding: 10px;
+  background: #a94948;
+  color: white;
+  font-size: 18px;
+}
+
+.Navigation a:hover {
+  background: #B85B5A;
+  text-decoration: none;
+  
+}
+
+.Navigation a:active {
+  background: #8f3332;
+}
+
+
+.PostTitle {
+	margin: 0 0 5px 0;
+	font-size: 35px;
+	text-align: left;
+	}
+
+.PostTitle a {
+	color: #666;
+}
+
+.PostTitle a:hover {
+  text-decoration: none;
+}
+
+.PostDate {
+	color: #999;
+	margin-bottom: 4px;
+}
+
+.PostComments {
+	padding-left: 20px;
+	background: url('images/comment.png') no-repeat center left;
+	height: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+
+
+
+.Post .PostMeta {
+  background: #efefef;
+  padding: 10px 10px 7px 10px;
+  margin: 30px 0 0 0 ;
+  color: #888;
+
+}
+
+.PostMeta .Share {
+  float: right;
+}
+
+/*PostBody  - contents of the post*/
+
+.PostBody h1 {
+	font-size: 35px;
+}
+
+.PostBody h2 {
+	font-size: 24px;
+	margin: 35px 0 15px 0;
+
+}
+
+.PostBody h3 {
+	font-size: 20px;
+	margin: 35px 0 15px 0;
+  color: #777;
+}
+
+
+
+.PostBody ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+}
+
+.Post p {
+  margin-bottom: 15px;
+  line-height: 145%;
+  color: #999;
+}
+
+
+h1 a:hover,h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	text-decoration: none;
+	}
+
+
+/*Comments*/
+
+
+.alt {
+	}
+
+
+.commentlist li {
+	margin: 15px 0 3px;
+
+	list-style: none;
+	}
+
+.CommentAuthor {
+  color: #333;
+  font-weight: bold;
+}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+
+
+.commentmetadata {
+	font-weight: normal;
+	color: #999;
+	float: right;
+	}
+
+
+.commentlist {
+  padding: 15px;
+  background: #EEE;
+}
+
+.commentlist li {
+  margin: 0 0 15px 0;
+  background: white;
+  padding: 10px;
+}
+
+.commentlist li:last-child {
+  margin: 0;
+}
+
+.commentlist li p {
+  color: #666;
+  line-height: 135%;
+}
+
+.commentlist li p:last-child {
+  margin-bottom: 0;
+}
+
+.Comments h2 {
+	font-size: 24px;
+	padding-bottom: 10px;
+	margin: 35px 0px 15px 0px;
+  border-bottom: solid 5px #DDD;
+}
+
+
+
+
+code {
+	font: 'Courier New', Courier, Fixed;
+	}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a, h2 a:hover, h3 a:hover {
+	color: #B85B5A;
+	text-decoration: none;
+	}
+
+a:hover {
+
+	text-decoration: underline;
+	}
+
+#wp-calendar #prev a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}
+/* End Typography & Colors */
+
+
+
+/* Begin Structure */
+
+#content {
+  float: left;
+	width: 540px;
+	margin-top: 20px;
+}
+
+/* End Structure */
+
+/*	Begin Headers */
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+h2.pagetitle {
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+h3 {
+	padding: 0;
+	margin: 30px 0 0;
+	}
+
+h3.comments {
+	padding: 0;
+	margin: 40px auto 20px ;
+	}
+	
+h4 {
+  font-size: 15px;
+}
+/* End Headers */
+
+
+.post img {
+	margin-right: 20px;
+}
+
+/* Begin Images */
+
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left
+}
+
+/* End Images */
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+/*Wraps all Posts*/
+.Posts .post:last-child {
+  border: none;
+}
+
+
+
+/* Sidebars */
+
+.Sidebar {
+  float: right;
+  width: 200px;
+  margin-top: 25px;
+}
+
+.Sidebar h2 {
+  font-size: 20px;
+	color: #666;
+	margin-bottom: 10px;
+
+}
+
+
+.Sidebar p {
+  margin-bottom: 15px;
+  color: #888;
+  line-height: 125%;
+}
+
+
+.Sidebar ul {
+  margin-bottom: 20px;
+}
+
+.Sidebar ul li {
+  margin-bottom: 4px;
+}
+
+
+
+
+/* Search */
+
+#searchform {
+	float: right;
+}
+
+
+
+select {
+	width: 130px;
+}
+
+
+/*Comment Form*/
+
+
+#respond {
+  font-size: 20px;
+}
+
+#commentform {
+  margin-bottom: 20px;
+}
+
+input#submit {
+  font-size: 15px;
+  font-family: georgia;
+  padding: 0;
+}
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+/* End Form Elements */
+
+
+
+
+
+
+
+
+/* Begin Sidebar */
+
+
+#sidebar form {
+	margin: 0;
+	}
+/* End Sidebar */
+
+
+
+/* Begin Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 155px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+/* End Calendar */
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+hr {
+	display: none;
+	}
+
+a img {
+	border: none;
+	}
+
+
+p.ActionButtonContainer {
+  padding: 10px 20px; 
+  background: #EEE;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.ActionButtonContainer span {
+  padding-top: 9px;
+  display: block;
+  color: #777;
+}
+
+a.ActionButton {
+  display: block;
+  font-size: 18px;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #9e3433;
+  background: -webkit-linear-gradient(top , #cc3f3e, #9e3433);
+  background: -moz-linear-gradient(top , #cc3f3e, #9e3433);
+  border: solid 2px #9e3433;
+  cursor: pointer;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.4);
+}
+
+a.ActionButton:hover {
+  text-decoration: none;
+  background: #b1403e;
+  background: -moz-linear-gradient(top , #da4644, #b1403e);
+  background: -webkit-linear-gradient(top , #da4644, #b1403e);
+}
+
+a.ActionButton:active {
+  background: #9e3433;
+  background: -moz-linear-gradient(top , #9e3433, #cc3f3e);
+  background: -webkit-linear-gradient(top , #9e3433, #cc3f3e);
+}
+
+/* Topics/Archives list in sidebar */
+
+.Categories .current-cat {
+  position: relative;
+  padding: 6px 0px;
+}
+
+.Categories .current-cat a
+  {
+  background: #A94948;
+  color: white;
+  padding: 6px;
+  }
+
+.Categories .current-cat {
+  
+}
+
+.Categories li {
+  color: #999;
+  margin-bottom: 5px;
+
+}
+
+.CategoryHeader {
+  font-size: 18px;
+  padding: 10px ;
+  background: #efefef;
+  color: #999;
+  display: none;
+}
+
+.CategoryName {
+  color: #777;
+}
+
+
+
+
+/*Footer*/
+
+footer {
+	border: none;
+}
+
+
+footer {
+	padding: 0;
+	margin: 0 auto;
+	clear: both;
+	border-top: solid 5px #DDD;
+}
+
+footer p {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+/*Post Thumbnails/*/
+
+.PostThumbnailsWrapper {
+  float: right;
+  width: 400px;
+  margin-top: 25px;
+  padding-bottom: 13px;
+  border-bottom: solid 5px #DDD;
+  overflow: hidden;
+  position: relative;
+}
+
+.PostThumbnails {
+  margin-bottom: 10px;
+  -webkit-transition: left linear .3s;
+}
+
+.PostThumbnails .PostLink {
+  float: left;
+  display: block;
+  margin: 0 5px 5px 0;
+}
+
+.PostThumbnails .Page {
+  float: left;
+  width: 400px;
+  margin-bottom: 10px;
+  
+}
+
+.ThumbNav a {
+  color: white;
+  background: #a94948;
+  padding: 8px 8px;
+  display: block;
+}
+
+.ThumbNav a:hover {
+  background: #B85B5A;
+  text-decoration: none;
+}
+
+.ThumbNav a:active {
+  background: #8f3332;
+}
+.PostThumbnailsWrapper #previous {
+  float: left;
+}
+
+.PostThumbnailsWrapper #next {
+  float: right;
+}
+
+.PostThumbnailsWrapper h2 {
+  font-size: 20px;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.PostThumbnailsWrapper h2 .Meta {
+	color: #BBB;
+}
+
+.PostThumbnails {
+  width: 3000px;
+  position: relative;
+}
+
+.PostThumbnails .TempPost  {
+  display: none;
+}
+
+.PostThumbnails .Thumbnail .ThumbnailImage,
+.PostThumbnails  .PostLink
+ {
+  display: block;
+}
+
+.PostThumbnails .Thumbnail {
+  float: left;
+  margin: 0 5px 5px 0;
+  opacity: 1;
+}
+
+
+.PostThumbnails .Thumbnail:hover {
+  opacity: .65  ;
+}
+
+.PostThumbnails img {
+  width: 95px;
+  height: 95px;
+}
+
+
+.sociable ul li {
+  float: left;
+  opacity: .4;
+  margin-left: 5px;
+}
+
+.sociable ul li:hover {
+  opacity: 1;
+
+}
+
+/*Contact icons*/
+
+#icon_rss {
+  background: url("images/rss.png") left no-repeat;
+  padding-left: 22px;
+}
+
+#icon_twitter {
+  background: url("images/twitter.png") left no-repeat;
+  padding-left: 22px;
+}
+
+
+#icon_linkedin {
+  background: url("images/linkedin.png") left no-repeat;
+  padding-left: 22px;
+}
+
+#icon_email {
+  background: url("images/email.png") left no-repeat;
+  padding-left: 22px;
+}
+
+
+.Process {
+
+}
+
+.Process li {
+  margin-bottom: 15px;
+  border-bottom: solid 1px #DDD;
+  padding: 5px 0 20px 0;
+  width: 100%;
+  overflow: auto;
+
+}
+
+.Process li:last-child {
+  border: none;
+}
+
+.Process li h3 {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.Process img {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  left: 3px;
+  border: solid 5px white;
+  width: 250px;
+  -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.4);
+}
+
+.needsborder {
+  border: solid 1px #DDD;
+}
+
+a.zoom img {
+  cursor: -moz-zoom-in;
+}
